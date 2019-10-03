@@ -95,6 +95,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a35fc3842c95a611d160a59262c223825"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6717ea313c7a45b21723bf283ccdd257"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#a6717ea313c7a45b21723bf283ccdd257">rotateByRadians</a> (double radiansToRotate, double angularVelocity=0.1)</td></tr>
 <tr class="separator:a6717ea313c7a45b21723bf283ccdd257"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab007d222a461ac5f461b3ef11d22451b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#ab007d222a461ac5f461b3ef11d22451b">moveToWaypoint</a> (<a class="el" href="structVector2.html">Vector2</a> &amp;wp)</td></tr>
+<tr class="separator:ab007d222a461ac5f461b3ef11d22451b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -395,6 +397,31 @@ static const double&#160;</td><td class="memItemRight" valign="bottom"><b>ROTATI
   <table class="params">
     <tr><td class="paramname">distanceInMeters</td><td>- total distance to move in meters. Negative values move backwards </td></tr>
     <tr><td class="paramname">forwardVelocity</td><td>- rate to move forward in meters per second (default 0.1). Negative values move backwards </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab007d222a461ac5f461b3ef11d22451b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab007d222a461ac5f461b3ef11d22451b">&#9670;&nbsp;</a></span>moveToWaypoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Robot::moveToWaypoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structVector2.html">Vector2</a> &amp;&#160;</td>
+          <td class="paramname"><em>wp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The robot will move to the specified Waypoint even if obstacles are in the way</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wp</td><td>- the waypoint for the robot to move to </td></tr>
   </table>
   </dd>
 </dl>
