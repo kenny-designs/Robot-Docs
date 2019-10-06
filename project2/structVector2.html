@@ -60,6 +60,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structVector2-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -67,7 +68,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="Robot_8h_source.html">Robot.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="Vector2_8h_source.html">Vector2.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -76,12 +77,19 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7d5805ff435328f0f0b70cad670c3d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3329f629c89b6627014a407b378933c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVector2.html#a3329f629c89b6627014a407b378933c8">operator-</a> (<a class="el" href="structVector2.html">Vector2</a> const &amp;subtrahend)</td></tr>
 <tr class="separator:a3329f629c89b6627014a407b378933c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5566511e8506bbe2902641086d8af6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVector2.html">Vector2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVector2.html#ac5566511e8506bbe2902641086d8af6a">operator-=</a> (<a class="el" href="structVector2.html">Vector2</a> const &amp;subtrahend)</td></tr>
-<tr class="separator:ac5566511e8506bbe2902641086d8af6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32660b671e4f349d8c800d9b7532478a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVector2.html">Vector2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVector2.html#a32660b671e4f349d8c800d9b7532478a">operator-=</a> (<a class="el" href="structVector2.html">Vector2</a> const &amp;subtrahend)</td></tr>
+<tr class="separator:a32660b671e4f349d8c800d9b7532478a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1f28daf513fd4ac8c35b01a9b35ea62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVector2.html#af1f28daf513fd4ac8c35b01a9b35ea62">operator/</a> (double divisor)</td></tr>
 <tr class="separator:af1f28daf513fd4ac8c35b01a9b35ea62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94a8f31dde845d01ba5e67f8d66b7b95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVector2.html">Vector2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVector2.html#a94a8f31dde845d01ba5e67f8d66b7b95">operator/=</a> (double divisor)</td></tr>
-<tr class="separator:a94a8f31dde845d01ba5e67f8d66b7b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d78350983e3b01a226600a498be077e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVector2.html">Vector2</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVector2.html#a5d78350983e3b01a226600a498be077e">operator/=</a> (double divisor)</td></tr>
+<tr class="separator:a5d78350983e3b01a226600a498be077e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a6fe46469c9fabf6eb2b53b090153bb66"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVector2.html#a6fe46469c9fabf6eb2b53b090153bb66">getMagnitude</a> (<a class="el" href="structVector2.html">Vector2</a> const &amp;vec2)</td></tr>
+<tr class="separator:a6fe46469c9fabf6eb2b53b090153bb66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10861942534b8e5179034bd4b7f635ce"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVector2.html#a10861942534b8e5179034bd4b7f635ce">normalize</a> (<a class="el" href="structVector2.html">Vector2</a> &amp;vec2)</td></tr>
+<tr class="separator:a10861942534b8e5179034bd4b7f635ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -93,16 +101,81 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>y</b></td></tr>
 <tr class="separator:a4df9b2a8e79e6e30a7a3b34722d8b8b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Struct used to represent a vector in 2D space TODO: should this be placed into its own file? </p>
+<div class="textblock"><p>Struct used to represent a vector in 2D space </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3329f629c89b6627014a407b378933c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3329f629c89b6627014a407b378933c8">&#9670;&nbsp;</a></span>operator-()</h2>
+<a id="a6fe46469c9fabf6eb2b53b090153bb66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fe46469c9fabf6eb2b53b090153bb66">&#9670;&nbsp;</a></span>getMagnitude()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Vector2::getMagnitude </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structVector2.html">Vector2</a> const &amp;&#160;</td>
+          <td class="paramname"><em>vec2</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Static helper methods</p>
+<p>Gets the magnitude, or distance, between points x and y of the given vector.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vec2</td><td>- The <a class="el" href="structVector2.html">Vector2</a> to get the magnitude of </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Magnitude of the vector </dd></dl>
+
+</div>
+</div>
+<a id="a10861942534b8e5179034bd4b7f635ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10861942534b8e5179034bd4b7f635ce">&#9670;&nbsp;</a></span>normalize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vector2::normalize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structVector2.html">Vector2</a> &amp;&#160;</td>
+          <td class="paramname"><em>vec2</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Normalizes the given <a class="el" href="structVector2.html">Vector2</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vec2</td><td>- The <a class="el" href="structVector2.html">Vector2</a> we wish to normalize </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3329f629c89b6627014a407b378933c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3329f629c89b6627014a407b378933c8">&#9670;&nbsp;</a></span>operator-()</h2>
+
+<div class="memitem">
+<div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="structVector2.html">Vector2</a> Vector2::operator- </td>
@@ -112,40 +185,30 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>y</b></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Overload - operator to subtract the <a class="el" href="structVector2.html">Vector2</a> by another <a class="el" href="structVector2.html">Vector2</a> </p>
+<p>Overload subtraction operators</p>
+<p>Subtracts one <a class="el" href="structVector2.html">Vector2</a> from another</p>
+<dl class="section return"><dt>Returns</dt><dd>A new <a class="el" href="structVector2.html">Vector2</a> object as a result of the subtraction. </dd></dl>
 
 </div>
 </div>
-<a id="ac5566511e8506bbe2902641086d8af6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5566511e8506bbe2902641086d8af6a">&#9670;&nbsp;</a></span>operator-=()</h2>
+<a id="a32660b671e4f349d8c800d9b7532478a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32660b671e4f349d8c800d9b7532478a">&#9670;&nbsp;</a></span>operator-=()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structVector2.html">Vector2</a>&amp; Vector2::operator-= </td>
+          <td class="memname"><a class="el" href="structVector2.html">Vector2</a> &amp; Vector2::operator-= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structVector2.html">Vector2</a> const &amp;&#160;</td>
           <td class="paramname"><em>subtrahend</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Overload -= operator to subtract the <a class="el" href="structVector2.html">Vector2</a> by another <a class="el" href="structVector2.html">Vector2</a> </p>
+<p>Subtracts from the <a class="el" href="structVector2.html">Vector2</a> on the left side of the -= operator by the one on the right.</p>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the <a class="el" href="structVector2.html">Vector2</a> object that was subtracted from. </dd></dl>
 
 </div>
 </div>
@@ -154,9 +217,6 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>y</b></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="structVector2.html">Vector2</a> Vector2::operator/ </td>
@@ -166,45 +226,36 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>y</b></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Overload / operator to divide the <a class="el" href="structVector2.html">Vector2</a> by a single divisor </p>
+<p>Overload division operators</p>
+<p>Divides the <a class="el" href="structVector2.html">Vector2</a> by a single scalar value.</p>
+<dl class="section return"><dt>Returns</dt><dd>A new <a class="el" href="structVector2.html">Vector2</a> object as a resulting of the division </dd></dl>
 
 </div>
 </div>
-<a id="a94a8f31dde845d01ba5e67f8d66b7b95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94a8f31dde845d01ba5e67f8d66b7b95">&#9670;&nbsp;</a></span>operator/=()</h2>
+<a id="a5d78350983e3b01a226600a498be077e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d78350983e3b01a226600a498be077e">&#9670;&nbsp;</a></span>operator/=()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structVector2.html">Vector2</a>&amp; Vector2::operator/= </td>
+          <td class="memname"><a class="el" href="structVector2.html">Vector2</a> &amp; Vector2::operator/= </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>divisor</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Overload /= operator to divide the <a class="el" href="structVector2.html">Vector2</a> by a single divisor </p>
+<p>Divides the <a class="el" href="structVector2.html">Vector2</a> on the left side of the /= operator by the scalar divisor on the right.</p>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the <a class="el" href="structVector2.html">Vector2</a> object that was divided </dd></dl>
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="Robot_8h_source.html">Robot.h</a></li>
+<hr/>The documentation for this struct was generated from the following files:<ul>
+<li><a class="el" href="Vector2_8h_source.html">Vector2.h</a></li>
+<li>Vector2.cc</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

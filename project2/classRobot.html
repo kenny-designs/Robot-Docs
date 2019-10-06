@@ -104,6 +104,8 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:aa4b3f22bf6f084baaa9a2e2a8b0e491d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ff342657f459c4ab2434706d5e9a2d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#a2ff342657f459c4ab2434706d5e9a2d6">getFinalTicksAndVelocity</a> (double distance, double &amp;velocity, int &amp;ticks)</td></tr>
 <tr class="separator:a2ff342657f459c4ab2434706d5e9a2d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5ffe11725c6c7ba80fa724ada8771fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#ad5ffe11725c6c7ba80fa724ada8771fe">getAngleDistanceToWaypoint</a> (<a class="el" href="structVector2.html">Vector2</a> &amp;wp, double &amp;angle, double &amp;distance)</td></tr>
+<tr class="separator:ad5ffe11725c6c7ba80fa724ada8771fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -172,6 +174,57 @@ static const double&#160;</td><td class="memItemRight" valign="bottom"><b>ROTATI
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad5ffe11725c6c7ba80fa724ada8771fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5ffe11725c6c7ba80fa724ada8771fe">&#9670;&nbsp;</a></span>getAngleDistanceToWaypoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Robot::getAngleDistanceToWaypoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structVector2.html">Vector2</a> &amp;&#160;</td>
+          <td class="paramname"><em>wp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>distance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Generates the angle and distance needed to first rotate to face then approach the given waypoint.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wp</td><td>- the waypoint we want to move to as a <a class="el" href="structVector2.html">Vector2</a> </td></tr>
+    <tr><td class="paramname">angle</td><td>- angle the robot must turn to face the waypoint </td></tr>
+    <tr><td class="paramname">distance</td><td>- distance the robot must travel to reach the waypoint </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a2ff342657f459c4ab2434706d5e9a2d6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2ff342657f459c4ab2434706d5e9a2d6">&#9670;&nbsp;</a></span>getFinalTicksAndVelocity()</h2>
 
