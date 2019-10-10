@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['isleftbumper',['isLeftBumper',['../classRobot.html#a164a68e942d8868bc97796eadf42023a',1,'Robot']]],
-  ['isrightbumper',['isRightBumper',['../classRobot.html#a19c6a76d4bb8004d88bb8805eba9cd12',1,'Robot']]]
+  ['handlebump',['handleBump',['../classRobot.html#a555657d83d1c190b125f6b0a436934dc',1,'Robot']]],
+  ['hasreachedwaypoint',['hasReachedWaypoint',['../classRobot.html#a0de5b178abb5ebcc4f936fb1cf7ca9dc',1,'Robot']]]
 ];

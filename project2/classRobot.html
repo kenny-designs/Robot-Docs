@@ -81,10 +81,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a60b83b42a3e08af931709a526632fb6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30cfb16f262020569b21780eecadf4ae"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#a30cfb16f262020569b21780eecadf4ae">getYaw</a> ()</td></tr>
 <tr class="separator:a30cfb16f262020569b21780eecadf4ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a164a68e942d8868bc97796eadf42023a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#a164a68e942d8868bc97796eadf42023a">isLeftBumper</a> ()</td></tr>
-<tr class="separator:a164a68e942d8868bc97796eadf42023a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19c6a76d4bb8004d88bb8805eba9cd12"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#a19c6a76d4bb8004d88bb8805eba9cd12">isRightBumper</a> ()</td></tr>
-<tr class="separator:a19c6a76d4bb8004d88bb8805eba9cd12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b33d92fbb96a9dc1c1eb7e2b776be38"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#a3b33d92fbb96a9dc1c1eb7e2b776be38">isLeftPressed</a> ()</td></tr>
+<tr class="separator:a3b33d92fbb96a9dc1c1eb7e2b776be38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb4caaf0af89fd69fcc0396e79690a39"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#acb4caaf0af89fd69fcc0396e79690a39">isRightPressed</a> ()</td></tr>
+<tr class="separator:acb4caaf0af89fd69fcc0396e79690a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64aeca7dab240ea7d56adf4de8448cba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#a64aeca7dab240ea7d56adf4de8448cba">printPosition</a> ()</td></tr>
 <tr class="separator:a64aeca7dab240ea7d56adf4de8448cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04301aeae6bb441235a9020f2b214fbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#a04301aeae6bb441235a9020f2b214fbf">printBumper</a> ()</td></tr>
@@ -106,6 +106,10 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a2ff342657f459c4ab2434706d5e9a2d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5ffe11725c6c7ba80fa724ada8771fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#ad5ffe11725c6c7ba80fa724ada8771fe">getAngleDistanceToWaypoint</a> (<a class="el" href="structVector2.html">Vector2</a> &amp;wp, double &amp;angle, double &amp;distance)</td></tr>
 <tr class="separator:ad5ffe11725c6c7ba80fa724ada8771fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a555657d83d1c190b125f6b0a436934dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#a555657d83d1c190b125f6b0a436934dc">handleBump</a> ()</td></tr>
+<tr class="separator:a555657d83d1c190b125f6b0a436934dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0de5b178abb5ebcc4f936fb1cf7ca9dc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#a0de5b178abb5ebcc4f936fb1cf7ca9dc">hasReachedWaypoint</a> (<a class="el" href="structVector2.html">Vector2</a> &amp;wp, double errorRange)</td></tr>
+<tr class="separator:a0de5b178abb5ebcc4f936fb1cf7ca9dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -121,6 +125,9 @@ PlayerCc::Position2dProxy&#160;</td><td class="memItemRight" valign="bottom"><b>
 <tr class="memitem:ab88f32a555401802c4022603cc59b056"><td class="memItemLeft" align="right" valign="top"><a id="ab88f32a555401802c4022603cc59b056"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isSimulation</b></td></tr>
 <tr class="separator:ab88f32a555401802c4022603cc59b056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2002d41deb66d48f30ebc6d7dde473bc"><td class="memItemLeft" align="right" valign="top"><a id="a2002d41deb66d48f30ebc6d7dde473bc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isCorrectingPosition</b></td></tr>
+<tr class="separator:a2002d41deb66d48f30ebc6d7dde473bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -333,14 +340,85 @@ static const double&#160;</td><td class="memItemRight" valign="bottom"><b>ROTATI
 
 </div>
 </div>
-<a id="a164a68e942d8868bc97796eadf42023a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a164a68e942d8868bc97796eadf42023a">&#9670;&nbsp;</a></span>isLeftBumper()</h2>
+<a id="a555657d83d1c190b125f6b0a436934dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a555657d83d1c190b125f6b0a436934dc">&#9670;&nbsp;</a></span>handleBump()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Robot::handleBump </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Corrects the robots position if a bumper has been pressed </p>
+
+</div>
+</div>
+<a id="a0de5b178abb5ebcc4f936fb1cf7ca9dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0de5b178abb5ebcc4f936fb1cf7ca9dc">&#9670;&nbsp;</a></span>hasReachedWaypoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Robot::hasReachedWaypoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structVector2.html">Vector2</a> &amp;&#160;</td>
+          <td class="paramname"><em>wp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>errorRange</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns true if the robot has reached the given waypoint within the given error range</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wp</td><td>- the waypoint we are testing to see if we reached </td></tr>
+    <tr><td class="paramname">errorRange</td><td>- the range in which the robot must be to the wp </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>- true if the robot has reached the robot. Otherwise, false </dd></dl>
+
+</div>
+</div>
+<a id="a3b33d92fbb96a9dc1c1eb7e2b776be38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b33d92fbb96a9dc1c1eb7e2b776be38">&#9670;&nbsp;</a></span>isLeftPressed()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Robot::isLeftBumper </td>
+          <td class="memname">bool Robot::isLeftPressed </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -351,14 +429,14 @@ static const double&#160;</td><td class="memItemRight" valign="bottom"><b>ROTATI
 
 </div>
 </div>
-<a id="a19c6a76d4bb8004d88bb8805eba9cd12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19c6a76d4bb8004d88bb8805eba9cd12">&#9670;&nbsp;</a></span>isRightBumper()</h2>
+<a id="acb4caaf0af89fd69fcc0396e79690a39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb4caaf0af89fd69fcc0396e79690a39">&#9670;&nbsp;</a></span>isRightPressed()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Robot::isRightBumper </td>
+          <td class="memname">bool Robot::isRightPressed </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>

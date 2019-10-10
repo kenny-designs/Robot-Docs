@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['moveandrotateoverticks',['moveAndRotateOverTicks',['../classRobot.html#aa4b3f22bf6f084baaa9a2e2a8b0e491d',1,'Robot']]],
-  ['moveforwardbymeters',['moveForwardByMeters',['../classRobot.html#a35fc3842c95a611d160a59262c223825',1,'Robot']]],
-  ['movetowaypoint',['moveToWaypoint',['../classRobot.html#ab007d222a461ac5f461b3ef11d22451b',1,'Robot']]]
+  ['isleftpressed',['isLeftPressed',['../classRobot.html#a3b33d92fbb96a9dc1c1eb7e2b776be38',1,'Robot']]],
+  ['isrightpressed',['isRightPressed',['../classRobot.html#acb4caaf0af89fd69fcc0396e79690a39',1,'Robot']]]
 ];
