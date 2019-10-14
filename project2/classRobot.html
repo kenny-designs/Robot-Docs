@@ -85,18 +85,20 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3b33d92fbb96a9dc1c1eb7e2b776be38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb4caaf0af89fd69fcc0396e79690a39"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#acb4caaf0af89fd69fcc0396e79690a39">isRightPressed</a> ()</td></tr>
 <tr class="separator:acb4caaf0af89fd69fcc0396e79690a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71db47948a4fc61791ffa789033bfac4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#a71db47948a4fc61791ffa789033bfac4">isAnyPressed</a> ()</td></tr>
+<tr class="separator:a71db47948a4fc61791ffa789033bfac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64aeca7dab240ea7d56adf4de8448cba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#a64aeca7dab240ea7d56adf4de8448cba">printPosition</a> ()</td></tr>
 <tr class="separator:a64aeca7dab240ea7d56adf4de8448cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04301aeae6bb441235a9020f2b214fbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#a04301aeae6bb441235a9020f2b214fbf">printBumper</a> ()</td></tr>
 <tr class="separator:a04301aeae6bb441235a9020f2b214fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae59cdda4345c38cff6157f78a417b102"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#ae59cdda4345c38cff6157f78a417b102">setMotorEnable</a> (bool isMotorEnabled)</td></tr>
 <tr class="separator:ae59cdda4345c38cff6157f78a417b102"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35fc3842c95a611d160a59262c223825"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#a35fc3842c95a611d160a59262c223825">moveForwardByMeters</a> (double distanceInMeters, double forwardVelocity=0.1)</td></tr>
-<tr class="separator:a35fc3842c95a611d160a59262c223825"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6717ea313c7a45b21723bf283ccdd257"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#a6717ea313c7a45b21723bf283ccdd257">rotateByRadians</a> (double radiansToRotate, double angularVelocity=0.1)</td></tr>
-<tr class="separator:a6717ea313c7a45b21723bf283ccdd257"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab007d222a461ac5f461b3ef11d22451b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#ab007d222a461ac5f461b3ef11d22451b">moveToWaypoint</a> (<a class="el" href="structVector2.html">Vector2</a> &amp;wp)</td></tr>
-<tr class="separator:ab007d222a461ac5f461b3ef11d22451b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cb45b5d6e8ede01ebe6996d7edcd093"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#a8cb45b5d6e8ede01ebe6996d7edcd093">moveForwardByMeters</a> (double distanceInMeters, double forwardVelocity=0.5)</td></tr>
+<tr class="separator:a8cb45b5d6e8ede01ebe6996d7edcd093"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e139756e0d56b718ff5c19daa7c5f57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#a4e139756e0d56b718ff5c19daa7c5f57">rotateByRadians</a> (double radiansToRotate, double angularVelocity=0.5)</td></tr>
+<tr class="separator:a4e139756e0d56b718ff5c19daa7c5f57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c26029a55663078f1a00c2f7eec4e7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#a5c26029a55663078f1a00c2f7eec4e7b">moveToWaypoint</a> (<a class="el" href="structVector2.html">Vector2</a> &amp;wp, double velocity=0.5, double angularVelocity=0.5, double errorRange=0.25)</td></tr>
+<tr class="separator:a5c26029a55663078f1a00c2f7eec4e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -106,10 +108,10 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a2ff342657f459c4ab2434706d5e9a2d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5ffe11725c6c7ba80fa724ada8771fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#ad5ffe11725c6c7ba80fa724ada8771fe">getAngleDistanceToWaypoint</a> (<a class="el" href="structVector2.html">Vector2</a> &amp;wp, double &amp;angle, double &amp;distance)</td></tr>
 <tr class="separator:ad5ffe11725c6c7ba80fa724ada8771fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a555657d83d1c190b125f6b0a436934dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#a555657d83d1c190b125f6b0a436934dc">handleBump</a> ()</td></tr>
-<tr class="separator:a555657d83d1c190b125f6b0a436934dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0de5b178abb5ebcc4f936fb1cf7ca9dc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#a0de5b178abb5ebcc4f936fb1cf7ca9dc">hasReachedWaypoint</a> (<a class="el" href="structVector2.html">Vector2</a> &amp;wp, double errorRange)</td></tr>
 <tr class="separator:a0de5b178abb5ebcc4f936fb1cf7ca9dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25f993909d29e0bd8a5127233a73adbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#a25f993909d29e0bd8a5127233a73adbb">handleBump</a> (double distance=1.0, double velocity=0.5, double angle=5.0 *M_PI/12.0, double angularVelocity=0.5)</td></tr>
+<tr class="separator:a25f993909d29e0bd8a5127233a73adbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -125,9 +127,9 @@ PlayerCc::Position2dProxy&#160;</td><td class="memItemRight" valign="bottom"><b>
 <tr class="memitem:ab88f32a555401802c4022603cc59b056"><td class="memItemLeft" align="right" valign="top"><a id="ab88f32a555401802c4022603cc59b056"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isSimulation</b></td></tr>
 <tr class="separator:ab88f32a555401802c4022603cc59b056"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2002d41deb66d48f30ebc6d7dde473bc"><td class="memItemLeft" align="right" valign="top"><a id="a2002d41deb66d48f30ebc6d7dde473bc"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isCorrectingPosition</b></td></tr>
-<tr class="separator:a2002d41deb66d48f30ebc6d7dde473bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c01fc0ef1c08e887f9665b108a890c8"><td class="memItemLeft" align="right" valign="top"><a id="a9c01fc0ef1c08e887f9665b108a890c8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isHandlingBump</b></td></tr>
+<tr class="separator:a9c01fc0ef1c08e887f9665b108a890c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -172,8 +174,8 @@ static const double&#160;</td><td class="memItemRight" valign="bottom"><b>ROTATI
 <p>Set up proxy. Proxies are the datastructures that Player uses to talk to the simulator and the real robot.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">isSimulation</td><td>- if false, adjusts settings to better accomodate the actual robot (true by default) </td></tr>
-    <tr><td class="paramname">hostname</td><td>- address to connect to (localhost by default) </td></tr>
+    <tr><td class="paramname">isSimulation</td><td>- if false, adjusts settings to better accomodate the actual robot </td></tr>
+    <tr><td class="paramname">hostname</td><td>- address to connect to </td></tr>
   </table>
   </dd>
 </dl>
@@ -340,8 +342,8 @@ static const double&#160;</td><td class="memItemRight" valign="bottom"><b>ROTATI
 
 </div>
 </div>
-<a id="a555657d83d1c190b125f6b0a436934dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a555657d83d1c190b125f6b0a436934dc">&#9670;&nbsp;</a></span>handleBump()</h2>
+<a id="a25f993909d29e0bd8a5127233a73adbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25f993909d29e0bd8a5127233a73adbb">&#9670;&nbsp;</a></span>handleBump()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -352,8 +354,31 @@ static const double&#160;</td><td class="memItemRight" valign="bottom"><b>ROTATI
         <tr>
           <td class="memname">void Robot::handleBump </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>distance</em> = <code>1.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>velocity</em> = <code>0.5</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>angle</em> = <code>5.0&#160;*&#160;M_PI&#160;/&#160;12.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>angVelocity</em> = <code>0.5</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -362,7 +387,16 @@ static const double&#160;</td><td class="memItemRight" valign="bottom"><b>ROTATI
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Corrects the robots position if a bumper has been pressed </p>
+<p>Corrects the robot's position if a bumper has been pressed by adjusting its orientation and location based on the given parameters.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">distance</td><td>- the distance for the robot to move </td></tr>
+    <tr><td class="paramname">velocity</td><td>- the velocity to move at </td></tr>
+    <tr><td class="paramname">angle</td><td>- the angle to rotate the robot </td></tr>
+    <tr><td class="paramname">angVelocity</td><td>- the velocity to rotate at </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -408,6 +442,24 @@ static const double&#160;</td><td class="memItemRight" valign="bottom"><b>ROTATI
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>- true if the robot has reached the robot. Otherwise, false </dd></dl>
+
+</div>
+</div>
+<a id="a71db47948a4fc61791ffa789033bfac4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71db47948a4fc61791ffa789033bfac4">&#9670;&nbsp;</a></span>isAnyPressed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Robot::isAnyPressed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns true if any bumper is pressed </p><dl class="section return"><dt>Returns</dt><dd>True if any bumper pressed </dd></dl>
 
 </div>
 </div>
@@ -498,8 +550,8 @@ static const double&#160;</td><td class="memItemRight" valign="bottom"><b>ROTATI
 
 </div>
 </div>
-<a id="a35fc3842c95a611d160a59262c223825"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35fc3842c95a611d160a59262c223825">&#9670;&nbsp;</a></span>moveForwardByMeters()</h2>
+<a id="a8cb45b5d6e8ede01ebe6996d7edcd093"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cb45b5d6e8ede01ebe6996d7edcd093">&#9670;&nbsp;</a></span>moveForwardByMeters()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -514,7 +566,7 @@ static const double&#160;</td><td class="memItemRight" valign="bottom"><b>ROTATI
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>forwardVelocity</em> = <code>0.1</code>&#160;</td>
+          <td class="paramname"><em>forwardVelocity</em> = <code>0.5</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -527,15 +579,15 @@ static const double&#160;</td><td class="memItemRight" valign="bottom"><b>ROTATI
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">distanceInMeters</td><td>- total distance to move in meters. Negative values move backwards </td></tr>
-    <tr><td class="paramname">forwardVelocity</td><td>- rate to move forward in meters per second (default 0.1). Negative values move backwards </td></tr>
+    <tr><td class="paramname">forwardVelocity</td><td>- rate to move forward in meters per second. Negative values move backwards </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="ab007d222a461ac5f461b3ef11d22451b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab007d222a461ac5f461b3ef11d22451b">&#9670;&nbsp;</a></span>moveToWaypoint()</h2>
+<a id="a5c26029a55663078f1a00c2f7eec4e7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c26029a55663078f1a00c2f7eec4e7b">&#9670;&nbsp;</a></span>moveToWaypoint()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -544,8 +596,30 @@ static const double&#160;</td><td class="memItemRight" valign="bottom"><b>ROTATI
           <td class="memname">void Robot::moveToWaypoint </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structVector2.html">Vector2</a> &amp;&#160;</td>
-          <td class="paramname"><em>wp</em></td><td>)</td>
+          <td class="paramname"><em>wp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>velocity</em> = <code>0.5</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>angularVelocity</em> = <code>0.5</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>errorRange</em> = <code>0.25</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -553,6 +627,9 @@ static const double&#160;</td><td class="memItemRight" valign="bottom"><b>ROTATI
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">wp</td><td>- the waypoint for the robot to move to </td></tr>
+    <tr><td class="paramname">velocity</td><td>- velocity for the robot to move in m/s </td></tr>
+    <tr><td class="paramname">angularVelocity</td><td>- angular velocity for the robot to rotate in rad/s </td></tr>
+    <tr><td class="paramname">errorRange</td><td>- minimum distance robot must be from waypoint in meters </td></tr>
   </table>
   </dd>
 </dl>
@@ -595,8 +672,8 @@ static const double&#160;</td><td class="memItemRight" valign="bottom"><b>ROTATI
 
 </div>
 </div>
-<a id="a6717ea313c7a45b21723bf283ccdd257"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6717ea313c7a45b21723bf283ccdd257">&#9670;&nbsp;</a></span>rotateByRadians()</h2>
+<a id="a4e139756e0d56b718ff5c19daa7c5f57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e139756e0d56b718ff5c19daa7c5f57">&#9670;&nbsp;</a></span>rotateByRadians()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -611,7 +688,7 @@ static const double&#160;</td><td class="memItemRight" valign="bottom"><b>ROTATI
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>angularVelocity</em> = <code>0.1</code>&#160;</td>
+          <td class="paramname"><em>angularVelocity</em> = <code>0.5</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -624,7 +701,7 @@ static const double&#160;</td><td class="memItemRight" valign="bottom"><b>ROTATI
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">radiansToRotate</td><td>- total angular distance to rotate in radians. Negative values rotate clockwise </td></tr>
-    <tr><td class="paramname">angularVelocity</td><td>- rate to rotate in radians per second (default 0.1). Negative values rotate clockwise </td></tr>
+    <tr><td class="paramname">angularVelocity</td><td>- rate to rotate in radians per second. Negative values rotate clockwise </td></tr>
   </table>
   </dd>
 </dl>
