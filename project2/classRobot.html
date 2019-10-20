@@ -99,6 +99,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4e139756e0d56b718ff5c19daa7c5f57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c26029a55663078f1a00c2f7eec4e7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#a5c26029a55663078f1a00c2f7eec4e7b">moveToWaypoint</a> (<a class="el" href="structVector2.html">Vector2</a> &amp;wp, double velocity=0.5, double angularVelocity=0.5, double errorRange=0.25)</td></tr>
 <tr class="separator:a5c26029a55663078f1a00c2f7eec4e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaeea6b2d4ffd01a82bd251bb8d45917"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#aaaeea6b2d4ffd01a82bd251bb8d45917">autoPilot</a> (bool(*stopCondition)(<a class="el" href="classRobot.html">Robot</a> *), TurnDirection::Enum simultaneousBumpDir=TurnDirection::Random, double velocity=0.5)</td></tr>
+<tr class="separator:aaaeea6b2d4ffd01a82bd251bb8d45917"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -110,8 +112,8 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:ad5ffe11725c6c7ba80fa724ada8771fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0de5b178abb5ebcc4f936fb1cf7ca9dc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#a0de5b178abb5ebcc4f936fb1cf7ca9dc">hasReachedWaypoint</a> (<a class="el" href="structVector2.html">Vector2</a> &amp;wp, double errorRange)</td></tr>
 <tr class="separator:a0de5b178abb5ebcc4f936fb1cf7ca9dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25f993909d29e0bd8a5127233a73adbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#a25f993909d29e0bd8a5127233a73adbb">handleBump</a> (double distance=1.0, double velocity=0.5, double angle=5.0 *M_PI/12.0, double angularVelocity=0.5)</td></tr>
-<tr class="separator:a25f993909d29e0bd8a5127233a73adbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac20b52d423a94d4a96bf08da32d52997"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRobot.html#ac20b52d423a94d4a96bf08da32d52997">handleBump</a> (TurnDirection::Enum simultaneousBumpDir=TurnDirection::Random, double angle=5.0 *M_PI/12.0, double distance=1.0, double velocity=0.5, double angularVelocity=0.5)</td></tr>
+<tr class="separator:ac20b52d423a94d4a96bf08da32d52997"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -183,6 +185,49 @@ static const double&#160;</td><td class="memItemRight" valign="bottom"><b>ROTATI
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aaaeea6b2d4ffd01a82bd251bb8d45917"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaeea6b2d4ffd01a82bd251bb8d45917">&#9670;&nbsp;</a></span>autoPilot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Robot::autoPilot </td>
+          <td>(</td>
+          <td class="paramtype">bool(*)(<a class="el" href="classRobot.html">Robot</a> *)&#160;</td>
+          <td class="paramname"><em>stopCondition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TurnDirection::Enum&#160;</td>
+          <td class="paramname"><em>simultaneousBumpDir</em> = <code>TurnDirection::Random</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>velocity</em> = <code>0.5</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The robot will constantly move forward and only change its course if a collision is detected via the bumpers. If the given stop condition ever returns true, the robot will exit auto pilot completely.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stopCondition</td><td>- function pointer that takes a pointer to <a class="el" href="classRobot.html">Robot</a>. If returns true, stop auto pilot. </td></tr>
+    <tr><td class="paramname">simultaneousBumpDir</td><td>- direction to turn if both bumpers are pressed </td></tr>
+    <tr><td class="paramname">velocity</td><td>- velocity of robot's forward movement </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ad5ffe11725c6c7ba80fa724ada8771fe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad5ffe11725c6c7ba80fa724ada8771fe">&#9670;&nbsp;</a></span>getAngleDistanceToWaypoint()</h2>
 
@@ -342,8 +387,8 @@ static const double&#160;</td><td class="memItemRight" valign="bottom"><b>ROTATI
 
 </div>
 </div>
-<a id="a25f993909d29e0bd8a5127233a73adbb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25f993909d29e0bd8a5127233a73adbb">&#9670;&nbsp;</a></span>handleBump()</h2>
+<a id="ac20b52d423a94d4a96bf08da32d52997"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac20b52d423a94d4a96bf08da32d52997">&#9670;&nbsp;</a></span>handleBump()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -354,6 +399,18 @@ static const double&#160;</td><td class="memItemRight" valign="bottom"><b>ROTATI
         <tr>
           <td class="memname">void Robot::handleBump </td>
           <td>(</td>
+          <td class="paramtype">TurnDirection::Enum&#160;</td>
+          <td class="paramname"><em>simultaneousBumpDir</em> = <code>TurnDirection::Random</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>angle</em> = <code>5.0&#160;*&#160;M_PI&#160;/&#160;12.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>distance</em> = <code>1.0</code>, </td>
         </tr>
@@ -362,12 +419,6 @@ static const double&#160;</td><td class="memItemRight" valign="bottom"><b>ROTATI
           <td></td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>velocity</em> = <code>0.5</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>angle</em> = <code>5.0&#160;*&#160;M_PI&#160;/&#160;12.0</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -390,9 +441,10 @@ static const double&#160;</td><td class="memItemRight" valign="bottom"><b>ROTATI
 <p>Corrects the robot's position if a bumper has been pressed by adjusting its orientation and location based on the given parameters.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">simultaneousBumpDir</td><td>- direction to turn if both bumpers are pressed </td></tr>
+    <tr><td class="paramname">angle</td><td>- the angle to rotate the robot </td></tr>
     <tr><td class="paramname">distance</td><td>- the distance for the robot to move </td></tr>
     <tr><td class="paramname">velocity</td><td>- the velocity to move at </td></tr>
-    <tr><td class="paramname">angle</td><td>- the angle to rotate the robot </td></tr>
     <tr><td class="paramname">angVelocity</td><td>- the velocity to rotate at </td></tr>
   </table>
   </dd>

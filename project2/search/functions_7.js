@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['robot',['Robot',['../classRobot.html#aadf13d050156f275c34eace9e6c3e782',1,'Robot']]],
-  ['rotatebyradians',['rotateByRadians',['../classRobot.html#a4e139756e0d56b718ff5c19daa7c5f57',1,'Robot']]]
+  ['printbumper',['printBumper',['../classRobot.html#a04301aeae6bb441235a9020f2b214fbf',1,'Robot']]],
+  ['printposition',['printPosition',['../classRobot.html#a64aeca7dab240ea7d56adf4de8448cba',1,'Robot']]]
 ];
