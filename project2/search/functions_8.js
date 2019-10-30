@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['robot',['Robot',['../classRobot.html#aadf13d050156f275c34eace9e6c3e782',1,'Robot']]],
-  ['rotatebyradians',['rotateByRadians',['../classRobot.html#a4e139756e0d56b718ff5c19daa7c5f57',1,'Robot']]]
+  ['setmotorenable',['setMotorEnable',['../classRobot.html#ae59cdda4345c38cff6157f78a417b102',1,'Robot']]],
+  ['setspeed',['setSpeed',['../classRobot.html#a1135ca4f689f1d8354cb03c3a095934e',1,'Robot']]]
 ];
