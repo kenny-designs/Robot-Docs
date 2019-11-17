@@ -1,0 +1,141 @@
+\hypertarget{structVector2}{}\section{Vector2 Struct Reference}
+\label{structVector2}\index{Vector2@{Vector2}}
+
+
+{\ttfamily \#include $<$Vector2.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structVector2_a7d5805ff435328f0f0b70cad670c3d0d}\label{structVector2_a7d5805ff435328f0f0b70cad670c3d0d}} 
+{\bfseries Vector2} (double x\+Pos, double y\+Pos)
+\item 
+\hyperlink{structVector2}{Vector2} \hyperlink{structVector2_a3329f629c89b6627014a407b378933c8}{operator-\/} (\hyperlink{structVector2}{Vector2} const \&subtrahend)
+\item 
+\hyperlink{structVector2}{Vector2} \& \hyperlink{structVector2_a32660b671e4f349d8c800d9b7532478a}{operator-\/=} (\hyperlink{structVector2}{Vector2} const \&subtrahend)
+\item 
+\hyperlink{structVector2}{Vector2} \hyperlink{structVector2_af1f28daf513fd4ac8c35b01a9b35ea62}{operator/} (double divisor)
+\item 
+\hyperlink{structVector2}{Vector2} \& \hyperlink{structVector2_a5d78350983e3b01a226600a498be077e}{operator/=} (double divisor)
+\item 
+bool \hyperlink{structVector2_afcebc6a4ad7b13fe193e84610e276a4d}{operator==} (\hyperlink{structVector2}{Vector2} const \&other)
+\item 
+bool \hyperlink{structVector2_af967d99b507dae58826def2a2552daac}{operator!=} (\hyperlink{structVector2}{Vector2} const \&other)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \hyperlink{structVector2_a6fe46469c9fabf6eb2b53b090153bb66}{get\+Magnitude} (\hyperlink{structVector2}{Vector2} const \&vec2)
+\item 
+static void \hyperlink{structVector2_a10861942534b8e5179034bd4b7f635ce}{normalize} (\hyperlink{structVector2}{Vector2} \&vec2)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structVector2_a61d73d9036ccbb3257fbe595c014a1d0}\label{structVector2_a61d73d9036ccbb3257fbe595c014a1d0}} 
+double {\bfseries x}
+\item 
+\mbox{\Hypertarget{structVector2_a4df9b2a8e79e6e30a7a3b34722d8b8b8}\label{structVector2_a4df9b2a8e79e6e30a7a3b34722d8b8b8}} 
+double {\bfseries y}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Struct used to represent a vector in 2D space 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structVector2_a6fe46469c9fabf6eb2b53b090153bb66}\label{structVector2_a6fe46469c9fabf6eb2b53b090153bb66}} 
+\index{Vector2@{Vector2}!get\+Magnitude@{get\+Magnitude}}
+\index{get\+Magnitude@{get\+Magnitude}!Vector2@{Vector2}}
+\subsubsection{\texorpdfstring{get\+Magnitude()}{getMagnitude()}}
+{\footnotesize\ttfamily double Vector2\+::get\+Magnitude (\begin{DoxyParamCaption}\item[{\hyperlink{structVector2}{Vector2} const \&}]{vec2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Gets the magnitude, or distance, between points x and y of the given vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec2} & -\/ The \hyperlink{structVector2}{Vector2} to get the magnitude of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Magnitude of the vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structVector2_a10861942534b8e5179034bd4b7f635ce}\label{structVector2_a10861942534b8e5179034bd4b7f635ce}} 
+\index{Vector2@{Vector2}!normalize@{normalize}}
+\index{normalize@{normalize}!Vector2@{Vector2}}
+\subsubsection{\texorpdfstring{normalize()}{normalize()}}
+{\footnotesize\ttfamily void Vector2\+::normalize (\begin{DoxyParamCaption}\item[{\hyperlink{structVector2}{Vector2} \&}]{vec2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Normalizes the given \hyperlink{structVector2}{Vector2}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec2} & -\/ The \hyperlink{structVector2}{Vector2} we wish to normalize \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structVector2_af967d99b507dae58826def2a2552daac}\label{structVector2_af967d99b507dae58826def2a2552daac}} 
+\index{Vector2@{Vector2}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Vector2@{Vector2}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Vector2\+::operator!= (\begin{DoxyParamCaption}\item[{\hyperlink{structVector2}{Vector2} const \&}]{other }\end{DoxyParamCaption})}
+
+Compares the x and y values of both vectors. Returns true if they are not equal.
+
+@ return True if the vectors are not equal. False otherwise. \mbox{\Hypertarget{structVector2_a3329f629c89b6627014a407b378933c8}\label{structVector2_a3329f629c89b6627014a407b378933c8}} 
+\index{Vector2@{Vector2}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Vector2@{Vector2}}
+\subsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \hyperlink{structVector2}{Vector2} Vector2\+::operator-\/ (\begin{DoxyParamCaption}\item[{\hyperlink{structVector2}{Vector2} const \&}]{subtrahend }\end{DoxyParamCaption})}
+
+Subtracts one \hyperlink{structVector2}{Vector2} from another
+
+\begin{DoxyReturn}{Returns}
+A new \hyperlink{structVector2}{Vector2} object as a result of the subtraction. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structVector2_a32660b671e4f349d8c800d9b7532478a}\label{structVector2_a32660b671e4f349d8c800d9b7532478a}} 
+\index{Vector2@{Vector2}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Vector2@{Vector2}}
+\subsubsection{\texorpdfstring{operator-\/=()}{operator-=()}}
+{\footnotesize\ttfamily \hyperlink{structVector2}{Vector2} \& Vector2\+::operator-\/= (\begin{DoxyParamCaption}\item[{\hyperlink{structVector2}{Vector2} const \&}]{subtrahend }\end{DoxyParamCaption})}
+
+Subtracts from the \hyperlink{structVector2}{Vector2} on the left side of the -\/= operator by the one on the right.
+
+\begin{DoxyReturn}{Returns}
+A reference to the \hyperlink{structVector2}{Vector2} object that was subtracted from. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structVector2_af1f28daf513fd4ac8c35b01a9b35ea62}\label{structVector2_af1f28daf513fd4ac8c35b01a9b35ea62}} 
+\index{Vector2@{Vector2}!operator/@{operator/}}
+\index{operator/@{operator/}!Vector2@{Vector2}}
+\subsubsection{\texorpdfstring{operator/()}{operator/()}}
+{\footnotesize\ttfamily \hyperlink{structVector2}{Vector2} Vector2\+::operator/ (\begin{DoxyParamCaption}\item[{double}]{divisor }\end{DoxyParamCaption})}
+
+Divides the \hyperlink{structVector2}{Vector2} by a single scalar value.
+
+\begin{DoxyReturn}{Returns}
+A new \hyperlink{structVector2}{Vector2} object as a resulting of the division 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structVector2_a5d78350983e3b01a226600a498be077e}\label{structVector2_a5d78350983e3b01a226600a498be077e}} 
+\index{Vector2@{Vector2}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!Vector2@{Vector2}}
+\subsubsection{\texorpdfstring{operator/=()}{operator/=()}}
+{\footnotesize\ttfamily \hyperlink{structVector2}{Vector2} \& Vector2\+::operator/= (\begin{DoxyParamCaption}\item[{double}]{divisor }\end{DoxyParamCaption})}
+
+Divides the \hyperlink{structVector2}{Vector2} on the left side of the /= operator by the scalar divisor on the right.
+
+\begin{DoxyReturn}{Returns}
+A reference to the \hyperlink{structVector2}{Vector2} object that was divided 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structVector2_afcebc6a4ad7b13fe193e84610e276a4d}\label{structVector2_afcebc6a4ad7b13fe193e84610e276a4d}} 
+\index{Vector2@{Vector2}!operator==@{operator==}}
+\index{operator==@{operator==}!Vector2@{Vector2}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Vector2\+::operator== (\begin{DoxyParamCaption}\item[{\hyperlink{structVector2}{Vector2} const \&}]{other }\end{DoxyParamCaption})}
+
+Compares the x and y values of both vectors. Returns true if they are equal.
+
+@ return True if the vectors are equal. False otherwise. 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vector2.\+h\item 
+Vector2.\+cc\end{DoxyCompactItemize}

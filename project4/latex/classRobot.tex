@@ -1,0 +1,471 @@
+\hypertarget{classRobot}{}\section{Robot Class Reference}
+\label{classRobot}\index{Robot@{Robot}}
+
+
+{\ttfamily \#include $<$Robot.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRobot_ae488529a62015b970689420a1c1e04c9}{Robot} (bool is\+Using\+Laser=true, double movement\+Scale=1.\+0, double rotation\+Scale=1.\+0, double tick\+Interval=0.\+1, std\+::string hostname=\char`\"{}localhost\char`\"{})
+\item 
+\hyperlink{classRobot_a924320124b09c2f2ac1621aa210d5f38}{$\sim$\+Robot} ()
+\item 
+void \hyperlink{classRobot_a101cfa860e4b67d9f9f4f14a0487a57a}{read} ()
+\item 
+double \hyperlink{classRobot_a3b0bee526dcdfd730e919abd4f3898b1}{get\+Odometer\+Yaw} ()
+\item 
+\hyperlink{structVector2}{Vector2} \hyperlink{classRobot_a3d023c3f1c9f775711cf2e86cc9798f0}{get\+Odometer\+Pos} ()
+\item 
+\hyperlink{structVector2}{Vector2} \hyperlink{classRobot_acc2d5b3e769301c80217134a52d44c4f}{get\+Localized\+Pos} ()
+\item 
+double \hyperlink{classRobot_a7c0ff2fc5e195e8e8aaf566cfca78db9}{get\+Localized\+Yaw} ()
+\item 
+bool \hyperlink{classRobot_a3b33d92fbb96a9dc1c1eb7e2b776be38}{is\+Left\+Pressed} ()
+\item 
+bool \hyperlink{classRobot_acb4caaf0af89fd69fcc0396e79690a39}{is\+Right\+Pressed} ()
+\item 
+bool \hyperlink{classRobot_a71db47948a4fc61791ffa789033bfac4}{is\+Any\+Pressed} ()
+\item 
+void \hyperlink{classRobot_a4452b7eccd579684594669b97af8a64a}{print\+Odometer\+Position} ()
+\item 
+void \hyperlink{classRobot_a1a53d881a3efe4825b2685951345bfcf}{print\+Localized\+Position} ()
+\item 
+void \hyperlink{classRobot_aa603bab25b52c7375bff845f6a891fc4}{print\+All\+Hypotheses} ()
+\item 
+void \hyperlink{classRobot_a04301aeae6bb441235a9020f2b214fbf}{print\+Bumper} ()
+\item 
+void \hyperlink{classRobot_a4117efa8d1191d33b76851e5b5b1b13d}{print\+Laser\+Data} ()
+\item 
+player\+\_\+localize\+\_\+hypoth\+\_\+t \hyperlink{classRobot_a7dc56a1fab3664a7384c062310a132d4}{get\+Best\+Localize\+Hypothesis} ()
+\item 
+player\+\_\+pose2d\+\_\+t \hyperlink{classRobot_ace17789169940f6780b0f21487adeb6b}{get\+Pose\+From\+Localize\+Proxy} ()
+\item 
+void \hyperlink{classRobot_ac81ff2dbb90696fa4e538888e3e6e0f2}{localize} ()
+\item 
+void \hyperlink{classRobot_ae59cdda4345c38cff6157f78a417b102}{set\+Motor\+Enable} (bool is\+Motor\+Enabled)
+\item 
+void \hyperlink{classRobot_a8cb45b5d6e8ede01ebe6996d7edcd093}{move\+Forward\+By\+Meters} (double distance\+In\+Meters, double forward\+Velocity=0.\+5)
+\item 
+void \hyperlink{classRobot_a4e139756e0d56b718ff5c19daa7c5f57}{rotate\+By\+Radians} (double radians\+To\+Rotate, double angular\+Velocity=0.\+5)
+\item 
+void \hyperlink{classRobot_a1135ca4f689f1d8354cb03c3a095934e}{set\+Speed} (double forward\+Velocity=0.\+5, double angular\+Velocity=0.\+5, Turn\+Direction\+::\+Enum dir=Turn\+Direction\+::\+Left)
+\item 
+void \hyperlink{classRobot_a306de5cd4eb51303215da0c297cad8f4}{handle\+Bump} (\hyperlink{structHandleBumpConfig}{Handle\+Bump\+Config} bump\+Config=\hyperlink{structHandleBumpConfig}{Handle\+Bump\+Config}(), double angle=5.\+0 $\ast$M\+\_\+\+PI/12.\+0, double distance=1.\+0, double velocity=1.\+0, double angular\+Velocity=0.\+5)
+\item 
+bool \hyperlink{classRobot_a6d3148bac2584791cf1b6cf605b6141f}{has\+Reached\+Waypoint} (\hyperlink{structVector2}{Vector2} \&pos, \hyperlink{structVector2}{Vector2} \&wp, double error\+Range)
+\item 
+void \hyperlink{classRobot_aac3d5c4fe3ad380ad07be9ff0433efb3}{move\+To\+Waypoint} (\hyperlink{structVector2}{Vector2} \&wp, bool use\+Localization=false, double velocity=0.\+5, double angular\+Velocity=0.\+5, double error\+Range=0.\+25)
+\item 
+void \hyperlink{classRobot_a265b1714581af33680485d17bb496526}{auto\+Pilot\+Laser} (double forward\+Velocity=0.\+5, double angular\+Velocity=1.\+0)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classRobot_aa4b3f22bf6f084baaa9a2e2a8b0e491d}{move\+And\+Rotate\+Over\+Ticks} (double forward\+Velocity, double angular\+Velocity, int ticks)
+\item 
+void \hyperlink{classRobot_a2ff342657f459c4ab2434706d5e9a2d6}{get\+Final\+Ticks\+And\+Velocity} (double distance, double \&velocity, int \&ticks)
+\item 
+void \hyperlink{classRobot_acc190d23229cf677bd5067eb9258d5ed}{get\+Angle\+Distance\+To\+Waypoint} (\hyperlink{structVector2}{Vector2} \&pos, double yaw, \hyperlink{structVector2}{Vector2} \&wp, double \&angle, double \&distance)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRobot_ac3903c0fa2e632a3fc62b359ed1f12f2}\label{classRobot_ac3903c0fa2e632a3fc62b359ed1f12f2}} 
+Player\+Cc\+::\+Player\+Client {\bfseries robot}
+\item 
+\mbox{\Hypertarget{classRobot_a1a1e0da135cca4e2b18b6f7d6fa23c37}\label{classRobot_a1a1e0da135cca4e2b18b6f7d6fa23c37}} 
+Player\+Cc\+::\+Position2d\+Proxy {\bfseries pp}
+\item 
+\mbox{\Hypertarget{classRobot_a32ed999d2284b95c3596c6f073419332}\label{classRobot_a32ed999d2284b95c3596c6f073419332}} 
+Player\+Cc\+::\+Bumper\+Proxy {\bfseries bp}
+\item 
+\mbox{\Hypertarget{classRobot_afbac60316bed1b1f2d842fd27c0beb5a}\label{classRobot_afbac60316bed1b1f2d842fd27c0beb5a}} 
+Player\+Cc\+::\+Localize\+Proxy {\bfseries lp}
+\item 
+\mbox{\Hypertarget{classRobot_af275732b49e679308fb040b5a9c19b58}\label{classRobot_af275732b49e679308fb040b5a9c19b58}} 
+Player\+Cc\+::\+Laser\+Proxy $\ast$ {\bfseries sp}
+\item 
+\mbox{\Hypertarget{classRobot_a9c01fc0ef1c08e887f9665b108a890c8}\label{classRobot_a9c01fc0ef1c08e887f9665b108a890c8}} 
+bool {\bfseries is\+Handling\+Bump}
+\item 
+\mbox{\Hypertarget{classRobot_aa22bd6b38ddba98d083cfa26d64d0198}\label{classRobot_aa22bd6b38ddba98d083cfa26d64d0198}} 
+const double {\bfseries T\+I\+C\+K\+\_\+\+I\+N\+T\+E\+R\+V\+AL}
+\item 
+\mbox{\Hypertarget{classRobot_ab9aac821c352ae19c69a33e73d8794be}\label{classRobot_ab9aac821c352ae19c69a33e73d8794be}} 
+const double {\bfseries M\+O\+V\+E\+M\+E\+N\+T\+\_\+\+S\+C\+A\+LE}
+\item 
+\mbox{\Hypertarget{classRobot_a270e244b851508ba5cc9fbc2a871c64e}\label{classRobot_a270e244b851508ba5cc9fbc2a871c64e}} 
+const double {\bfseries R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+S\+C\+A\+LE}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Wrapper class used to simplify use of the \hyperlink{classRobot}{Robot} 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRobot_ae488529a62015b970689420a1c1e04c9}\label{classRobot_ae488529a62015b970689420a1c1e04c9}} 
+\index{Robot@{Robot}!Robot@{Robot}}
+\index{Robot@{Robot}!Robot@{Robot}}
+\subsubsection{\texorpdfstring{Robot()}{Robot()}}
+{\footnotesize\ttfamily Robot\+::\+Robot (\begin{DoxyParamCaption}\item[{bool}]{is\+Using\+Laser = {\ttfamily true},  }\item[{double}]{movement\+Scale = {\ttfamily 1.0},  }\item[{double}]{rotation\+Scale = {\ttfamily 1.0},  }\item[{double}]{tick\+Interval = {\ttfamily 0.1},  }\item[{std\+::string}]{hostname = {\ttfamily \char`\"{}localhost\char`\"{}} }\end{DoxyParamCaption})}
+
+Set up proxy. Proxies are the datastructures that Player uses to talk to the simulator and the real robot.
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Using\+Laser} & -\/ if true, sets up the Laser\+Proxy to be used by the robot \\
+\hline
+{\em movement\+Scale} & -\/ scales the overall velocity of the robot \\
+\hline
+{\em rotation\+Scale} & -\/ scales the overall angular velocity of the robot \\
+\hline
+{\em tick\+Interval} & -\/ the interval that of which the robot ticks at \\
+\hline
+{\em hostname} & -\/ address to connect to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRobot_a924320124b09c2f2ac1621aa210d5f38}\label{classRobot_a924320124b09c2f2ac1621aa210d5f38}} 
+\index{Robot@{Robot}!````~Robot@{$\sim$\+Robot}}
+\index{````~Robot@{$\sim$\+Robot}!Robot@{Robot}}
+\subsubsection{\texorpdfstring{$\sim$\+Robot()}{~Robot()}}
+{\footnotesize\ttfamily Robot\+::$\sim$\+Robot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor used to release memory 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classRobot_a265b1714581af33680485d17bb496526}\label{classRobot_a265b1714581af33680485d17bb496526}} 
+\index{Robot@{Robot}!auto\+Pilot\+Laser@{auto\+Pilot\+Laser}}
+\index{auto\+Pilot\+Laser@{auto\+Pilot\+Laser}!Robot@{Robot}}
+\subsubsection{\texorpdfstring{auto\+Pilot\+Laser()}{autoPilotLaser()}}
+{\footnotesize\ttfamily void Robot\+::auto\+Pilot\+Laser (\begin{DoxyParamCaption}\item[{double}]{forward\+Velocity = {\ttfamily 0.5},  }\item[{double}]{angular\+Velocity = {\ttfamily 1.0} }\end{DoxyParamCaption})}
+
+The robot will constantly move forward whilst only relying on its laser. It will cease movement upon reaching a dead end.
+
+
+\begin{DoxyParams}{Parameters}
+{\em forward\+Velocity} & -\/ velocity that the robot moves forward at in m/s \\
+\hline
+{\em angular\+Velocity} & -\/ angular velocity that the robot rotates at in rad/s \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRobot_acc190d23229cf677bd5067eb9258d5ed}\label{classRobot_acc190d23229cf677bd5067eb9258d5ed}} 
+\index{Robot@{Robot}!get\+Angle\+Distance\+To\+Waypoint@{get\+Angle\+Distance\+To\+Waypoint}}
+\index{get\+Angle\+Distance\+To\+Waypoint@{get\+Angle\+Distance\+To\+Waypoint}!Robot@{Robot}}
+\subsubsection{\texorpdfstring{get\+Angle\+Distance\+To\+Waypoint()}{getAngleDistanceToWaypoint()}}
+{\footnotesize\ttfamily void Robot\+::get\+Angle\+Distance\+To\+Waypoint (\begin{DoxyParamCaption}\item[{\hyperlink{structVector2}{Vector2} \&}]{pos,  }\item[{double}]{yaw,  }\item[{\hyperlink{structVector2}{Vector2} \&}]{wp,  }\item[{double \&}]{angle,  }\item[{double \&}]{distance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Generates the angle and distance needed to reach a given waypoint.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & -\/ the current position of the robot \\
+\hline
+{\em yaw} & -\/ the current yaw of the robot \\
+\hline
+{\em wp} & -\/ the waypoint we want to move to as a \hyperlink{structVector2}{Vector2} \\
+\hline
+{\em angle} & -\/ angle the robot must turn to face the waypoint \\
+\hline
+{\em distance} & -\/ distance the robot must travel to reach the waypoint \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRobot_a7dc56a1fab3664a7384c062310a132d4}\label{classRobot_a7dc56a1fab3664a7384c062310a132d4}} 
+\index{Robot@{Robot}!get\+Best\+Localize\+Hypothesis@{get\+Best\+Localize\+Hypothesis}}
+\index{get\+Best\+Localize\+Hypothesis@{get\+Best\+Localize\+Hypothesis}!Robot@{Robot}}
+\subsubsection{\texorpdfstring{get\+Best\+Localize\+Hypothesis()}{getBestLocalizeHypothesis()}}
+{\footnotesize\ttfamily player\+\_\+localize\+\_\+hypoth\+\_\+t Robot\+::get\+Best\+Localize\+Hypothesis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Finds the hypothesis with the greatest weight
+
+\begin{DoxyReturn}{Returns}
+hypothesis with greatest weight 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRobot_a2ff342657f459c4ab2434706d5e9a2d6}\label{classRobot_a2ff342657f459c4ab2434706d5e9a2d6}} 
+\index{Robot@{Robot}!get\+Final\+Ticks\+And\+Velocity@{get\+Final\+Ticks\+And\+Velocity}}
+\index{get\+Final\+Ticks\+And\+Velocity@{get\+Final\+Ticks\+And\+Velocity}!Robot@{Robot}}
+\subsubsection{\texorpdfstring{get\+Final\+Ticks\+And\+Velocity()}{getFinalTicksAndVelocity()}}
+{\footnotesize\ttfamily void Robot\+::get\+Final\+Ticks\+And\+Velocity (\begin{DoxyParamCaption}\item[{double}]{distance,  }\item[{double \&}]{velocity,  }\item[{int \&}]{ticks }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Calculates what the velocity and ticks should be to cover the given distance. The given velocity and ticks are mutated to match this calculation.
+
+The velocity variable will remain the same unless a negative distance is given. Be that the case, velocity will be negated. Its absolute value will never change though.
+
+The ticks variable will be approximated to match the number of ticks needed to cover the given distance with our current velocity.
+
+For example, to cover 1 meter while traveling at 0.\+1 m/s, we divide 1m by 0.\+1m/s to get 10s. We then divide that result by the number of ticks that occur in a second (default is 10 as per T\+I\+C\+K\+\_\+\+I\+N\+T\+E\+R\+V\+AL). So 10s divided by 0.\+1s is 100. So, for the robot to travel 1 meter while going at 0.\+1 m/s, it will take a total of 100 ticks.
+
+
+\begin{DoxyParams}{Parameters}
+{\em distance} & -\/ total distance to travel \\
+\hline
+{\em velocity} & -\/ rate that of which we are traveling. Original variable will be negated if traveling a negative distance \\
+\hline
+{\em ticks} & -\/ mutates the original variable with the number of ticks needed to cover the given distance at the given velocity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRobot_acc2d5b3e769301c80217134a52d44c4f}\label{classRobot_acc2d5b3e769301c80217134a52d44c4f}} 
+\index{Robot@{Robot}!get\+Localized\+Pos@{get\+Localized\+Pos}}
+\index{get\+Localized\+Pos@{get\+Localized\+Pos}!Robot@{Robot}}
+\subsubsection{\texorpdfstring{get\+Localized\+Pos()}{getLocalizedPos()}}
+{\footnotesize\ttfamily \hyperlink{structVector2}{Vector2} Robot\+::get\+Localized\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the current position of the robot based off of localization \begin{DoxyReturn}{Returns}
+\hyperlink{structVector2}{Vector2} of the robot\textquotesingle{}s current localized position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRobot_a7c0ff2fc5e195e8e8aaf566cfca78db9}\label{classRobot_a7c0ff2fc5e195e8e8aaf566cfca78db9}} 
+\index{Robot@{Robot}!get\+Localized\+Yaw@{get\+Localized\+Yaw}}
+\index{get\+Localized\+Yaw@{get\+Localized\+Yaw}!Robot@{Robot}}
+\subsubsection{\texorpdfstring{get\+Localized\+Yaw()}{getLocalizedYaw()}}
+{\footnotesize\ttfamily double Robot\+::get\+Localized\+Yaw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets \hyperlink{classRobot}{Robot} Yaw rotation based on localization \begin{DoxyReturn}{Returns}
+Localized Yaw rotation as double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRobot_a3d023c3f1c9f775711cf2e86cc9798f0}\label{classRobot_a3d023c3f1c9f775711cf2e86cc9798f0}} 
+\index{Robot@{Robot}!get\+Odometer\+Pos@{get\+Odometer\+Pos}}
+\index{get\+Odometer\+Pos@{get\+Odometer\+Pos}!Robot@{Robot}}
+\subsubsection{\texorpdfstring{get\+Odometer\+Pos()}{getOdometerPos()}}
+{\footnotesize\ttfamily \hyperlink{structVector2}{Vector2} Robot\+::get\+Odometer\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the current position of the robot based off of the odometer \begin{DoxyReturn}{Returns}
+\hyperlink{structVector2}{Vector2} of the robot\textquotesingle{}s current odometer position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRobot_a3b0bee526dcdfd730e919abd4f3898b1}\label{classRobot_a3b0bee526dcdfd730e919abd4f3898b1}} 
+\index{Robot@{Robot}!get\+Odometer\+Yaw@{get\+Odometer\+Yaw}}
+\index{get\+Odometer\+Yaw@{get\+Odometer\+Yaw}!Robot@{Robot}}
+\subsubsection{\texorpdfstring{get\+Odometer\+Yaw()}{getOdometerYaw()}}
+{\footnotesize\ttfamily double Robot\+::get\+Odometer\+Yaw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets \hyperlink{classRobot}{Robot} Yaw rotation based on odometry \begin{DoxyReturn}{Returns}
+Yaw rotation as double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRobot_ace17789169940f6780b0f21487adeb6b}\label{classRobot_ace17789169940f6780b0f21487adeb6b}} 
+\index{Robot@{Robot}!get\+Pose\+From\+Localize\+Proxy@{get\+Pose\+From\+Localize\+Proxy}}
+\index{get\+Pose\+From\+Localize\+Proxy@{get\+Pose\+From\+Localize\+Proxy}!Robot@{Robot}}
+\subsubsection{\texorpdfstring{get\+Pose\+From\+Localize\+Proxy()}{getPoseFromLocalizeProxy()}}
+{\footnotesize\ttfamily player\+\_\+pose2d\+\_\+t Robot\+::get\+Pose\+From\+Localize\+Proxy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Read the position of the robot from the localization proxy.
+
+The localization proxy gives us a set of \char`\"{}hypotheses\char`\"{}, each of which is a number of possible locations for the robot, and from each we extract the mean, which is a pose.
+
+As the number of hypotheses drops, the robot should be more sure of where it is.
+
+\begin{DoxyReturn}{Returns}
+the pose with the greatest amount of weight 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRobot_a306de5cd4eb51303215da0c297cad8f4}\label{classRobot_a306de5cd4eb51303215da0c297cad8f4}} 
+\index{Robot@{Robot}!handle\+Bump@{handle\+Bump}}
+\index{handle\+Bump@{handle\+Bump}!Robot@{Robot}}
+\subsubsection{\texorpdfstring{handle\+Bump()}{handleBump()}}
+{\footnotesize\ttfamily void Robot\+::handle\+Bump (\begin{DoxyParamCaption}\item[{\hyperlink{structHandleBumpConfig}{Handle\+Bump\+Config}}]{bump\+Config = {\ttfamily \hyperlink{structHandleBumpConfig}{Handle\+Bump\+Config}()},  }\item[{double}]{angle = {\ttfamily 5.0~$\ast$~M\+\_\+PI~/~12.0},  }\item[{double}]{distance = {\ttfamily 1.0},  }\item[{double}]{velocity = {\ttfamily 1.0},  }\item[{double}]{ang\+Velocity = {\ttfamily 0.5} }\end{DoxyParamCaption})}
+
+Corrects the robot\textquotesingle{}s position if a bumper has been pressed by adjusting its orientation and location based on the given parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bump\+Config} & -\/ how the robot should respond to bumpers being pressed \\
+\hline
+{\em angle} & -\/ the angle to rotate the robot \\
+\hline
+{\em distance} & -\/ the distance for the robot to move \\
+\hline
+{\em velocity} & -\/ the velocity to move at \\
+\hline
+{\em ang\+Velocity} & -\/ the velocity to rotate at \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRobot_a6d3148bac2584791cf1b6cf605b6141f}\label{classRobot_a6d3148bac2584791cf1b6cf605b6141f}} 
+\index{Robot@{Robot}!has\+Reached\+Waypoint@{has\+Reached\+Waypoint}}
+\index{has\+Reached\+Waypoint@{has\+Reached\+Waypoint}!Robot@{Robot}}
+\subsubsection{\texorpdfstring{has\+Reached\+Waypoint()}{hasReachedWaypoint()}}
+{\footnotesize\ttfamily bool Robot\+::has\+Reached\+Waypoint (\begin{DoxyParamCaption}\item[{\hyperlink{structVector2}{Vector2} \&}]{pos,  }\item[{\hyperlink{structVector2}{Vector2} \&}]{wp,  }\item[{double}]{error\+Range }\end{DoxyParamCaption})}
+
+Returns true if the robot has reached the given waypoint within the given error range
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & -\/ the waypoint the robot is currently at \\
+\hline
+{\em wp} & -\/ the waypoint we are testing to see if we reached \\
+\hline
+{\em error\+Range} & -\/ the range in which the robot must be to the wp \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the robot has reached the robot. Otherwise, false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRobot_a71db47948a4fc61791ffa789033bfac4}\label{classRobot_a71db47948a4fc61791ffa789033bfac4}} 
+\index{Robot@{Robot}!is\+Any\+Pressed@{is\+Any\+Pressed}}
+\index{is\+Any\+Pressed@{is\+Any\+Pressed}!Robot@{Robot}}
+\subsubsection{\texorpdfstring{is\+Any\+Pressed()}{isAnyPressed()}}
+{\footnotesize\ttfamily bool Robot\+::is\+Any\+Pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns true if any bumper is pressed \begin{DoxyReturn}{Returns}
+True if any bumper pressed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRobot_a3b33d92fbb96a9dc1c1eb7e2b776be38}\label{classRobot_a3b33d92fbb96a9dc1c1eb7e2b776be38}} 
+\index{Robot@{Robot}!is\+Left\+Pressed@{is\+Left\+Pressed}}
+\index{is\+Left\+Pressed@{is\+Left\+Pressed}!Robot@{Robot}}
+\subsubsection{\texorpdfstring{is\+Left\+Pressed()}{isLeftPressed()}}
+{\footnotesize\ttfamily bool Robot\+::is\+Left\+Pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns true if the left bumper is pressed \begin{DoxyReturn}{Returns}
+True if left bumper pressed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRobot_acb4caaf0af89fd69fcc0396e79690a39}\label{classRobot_acb4caaf0af89fd69fcc0396e79690a39}} 
+\index{Robot@{Robot}!is\+Right\+Pressed@{is\+Right\+Pressed}}
+\index{is\+Right\+Pressed@{is\+Right\+Pressed}!Robot@{Robot}}
+\subsubsection{\texorpdfstring{is\+Right\+Pressed()}{isRightPressed()}}
+{\footnotesize\ttfamily bool Robot\+::is\+Right\+Pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns true if the right bumper is pressed \begin{DoxyReturn}{Returns}
+True if right bumper pressed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRobot_ac81ff2dbb90696fa4e538888e3e6e0f2}\label{classRobot_ac81ff2dbb90696fa4e538888e3e6e0f2}} 
+\index{Robot@{Robot}!localize@{localize}}
+\index{localize@{localize}!Robot@{Robot}}
+\subsubsection{\texorpdfstring{localize()}{localize()}}
+{\footnotesize\ttfamily void Robot\+::localize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{classRobot}{Robot} localizes itself by moving around the map until it is certain of its position \mbox{\Hypertarget{classRobot_aa4b3f22bf6f084baaa9a2e2a8b0e491d}\label{classRobot_aa4b3f22bf6f084baaa9a2e2a8b0e491d}} 
+\index{Robot@{Robot}!move\+And\+Rotate\+Over\+Ticks@{move\+And\+Rotate\+Over\+Ticks}}
+\index{move\+And\+Rotate\+Over\+Ticks@{move\+And\+Rotate\+Over\+Ticks}!Robot@{Robot}}
+\subsubsection{\texorpdfstring{move\+And\+Rotate\+Over\+Ticks()}{moveAndRotateOverTicks()}}
+{\footnotesize\ttfamily void Robot\+::move\+And\+Rotate\+Over\+Ticks (\begin{DoxyParamCaption}\item[{double}]{forward\+Velocity,  }\item[{double}]{angular\+Velocity,  }\item[{int}]{ticks }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Move and rotate the robot over the given number of ticks
+
+
+\begin{DoxyParams}{Parameters}
+{\em forward\+Velocity} & -\/ forward velocity to move in meters per second \\
+\hline
+{\em angular\+Velocity} & -\/ angular velocity to rotate in radians per second \\
+\hline
+{\em ticks} & -\/ number of ticks to apply the forward/angular velocities to the robot for \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRobot_a8cb45b5d6e8ede01ebe6996d7edcd093}\label{classRobot_a8cb45b5d6e8ede01ebe6996d7edcd093}} 
+\index{Robot@{Robot}!move\+Forward\+By\+Meters@{move\+Forward\+By\+Meters}}
+\index{move\+Forward\+By\+Meters@{move\+Forward\+By\+Meters}!Robot@{Robot}}
+\subsubsection{\texorpdfstring{move\+Forward\+By\+Meters()}{moveForwardByMeters()}}
+{\footnotesize\ttfamily void Robot\+::move\+Forward\+By\+Meters (\begin{DoxyParamCaption}\item[{double}]{distance\+In\+Meters,  }\item[{double}]{forward\+Velocity = {\ttfamily 0.5} }\end{DoxyParamCaption})}
+
+Move the robot by the given distance in meters
+
+
+\begin{DoxyParams}{Parameters}
+{\em distance\+In\+Meters} & -\/ total distance to move in meters. Negative values move backwards \\
+\hline
+{\em forward\+Velocity} & -\/ rate to move forward in meters per second. Negative values move backwards \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRobot_aac3d5c4fe3ad380ad07be9ff0433efb3}\label{classRobot_aac3d5c4fe3ad380ad07be9ff0433efb3}} 
+\index{Robot@{Robot}!move\+To\+Waypoint@{move\+To\+Waypoint}}
+\index{move\+To\+Waypoint@{move\+To\+Waypoint}!Robot@{Robot}}
+\subsubsection{\texorpdfstring{move\+To\+Waypoint()}{moveToWaypoint()}}
+{\footnotesize\ttfamily void Robot\+::move\+To\+Waypoint (\begin{DoxyParamCaption}\item[{\hyperlink{structVector2}{Vector2} \&}]{wp,  }\item[{bool}]{use\+Localization = {\ttfamily false},  }\item[{double}]{velocity = {\ttfamily 0.5},  }\item[{double}]{angular\+Velocity = {\ttfamily 0.5},  }\item[{double}]{error\+Range = {\ttfamily 0.25} }\end{DoxyParamCaption})}
+
+The robot will move to the specified Waypoint even if obstacles are in the way
+
+
+\begin{DoxyParams}{Parameters}
+{\em wp} & -\/ the waypoint for the robot to move to \\
+\hline
+{\em use\+Localization} & -\/ uses localization if set to true. Otherwise, use odometry \\
+\hline
+{\em velocity} & -\/ velocity for the robot to move in m/s \\
+\hline
+{\em angular\+Velocity} & -\/ angular velocity for the robot to rotate in rad/s \\
+\hline
+{\em error\+Range} & -\/ minimum distance robot must be from waypoint in meters \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRobot_aa603bab25b52c7375bff845f6a891fc4}\label{classRobot_aa603bab25b52c7375bff845f6a891fc4}} 
+\index{Robot@{Robot}!print\+All\+Hypotheses@{print\+All\+Hypotheses}}
+\index{print\+All\+Hypotheses@{print\+All\+Hypotheses}!Robot@{Robot}}
+\subsubsection{\texorpdfstring{print\+All\+Hypotheses()}{printAllHypotheses()}}
+{\footnotesize\ttfamily void Robot\+::print\+All\+Hypotheses (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints all hypotheses \mbox{\Hypertarget{classRobot_a04301aeae6bb441235a9020f2b214fbf}\label{classRobot_a04301aeae6bb441235a9020f2b214fbf}} 
+\index{Robot@{Robot}!print\+Bumper@{print\+Bumper}}
+\index{print\+Bumper@{print\+Bumper}!Robot@{Robot}}
+\subsubsection{\texorpdfstring{print\+Bumper()}{printBumper()}}
+{\footnotesize\ttfamily void Robot\+::print\+Bumper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints state of the bumpers \mbox{\Hypertarget{classRobot_a4117efa8d1191d33b76851e5b5b1b13d}\label{classRobot_a4117efa8d1191d33b76851e5b5b1b13d}} 
+\index{Robot@{Robot}!print\+Laser\+Data@{print\+Laser\+Data}}
+\index{print\+Laser\+Data@{print\+Laser\+Data}!Robot@{Robot}}
+\subsubsection{\texorpdfstring{print\+Laser\+Data()}{printLaserData()}}
+{\footnotesize\ttfamily void Robot\+::print\+Laser\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints data from the laser \mbox{\Hypertarget{classRobot_a1a53d881a3efe4825b2685951345bfcf}\label{classRobot_a1a53d881a3efe4825b2685951345bfcf}} 
+\index{Robot@{Robot}!print\+Localized\+Position@{print\+Localized\+Position}}
+\index{print\+Localized\+Position@{print\+Localized\+Position}!Robot@{Robot}}
+\subsubsection{\texorpdfstring{print\+Localized\+Position()}{printLocalizedPosition()}}
+{\footnotesize\ttfamily void Robot\+::print\+Localized\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints the X, Y, and Yaw positions of the robot based on localization \mbox{\Hypertarget{classRobot_a4452b7eccd579684594669b97af8a64a}\label{classRobot_a4452b7eccd579684594669b97af8a64a}} 
+\index{Robot@{Robot}!print\+Odometer\+Position@{print\+Odometer\+Position}}
+\index{print\+Odometer\+Position@{print\+Odometer\+Position}!Robot@{Robot}}
+\subsubsection{\texorpdfstring{print\+Odometer\+Position()}{printOdometerPosition()}}
+{\footnotesize\ttfamily void Robot\+::print\+Odometer\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints the X, Y, and Yaw odometry positions of the \hyperlink{classRobot}{Robot} \mbox{\Hypertarget{classRobot_a101cfa860e4b67d9f9f4f14a0487a57a}\label{classRobot_a101cfa860e4b67d9f9f4f14a0487a57a}} 
+\index{Robot@{Robot}!read@{read}}
+\index{read@{read}!Robot@{Robot}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily void Robot\+::read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Read from the environment \mbox{\Hypertarget{classRobot_a4e139756e0d56b718ff5c19daa7c5f57}\label{classRobot_a4e139756e0d56b718ff5c19daa7c5f57}} 
+\index{Robot@{Robot}!rotate\+By\+Radians@{rotate\+By\+Radians}}
+\index{rotate\+By\+Radians@{rotate\+By\+Radians}!Robot@{Robot}}
+\subsubsection{\texorpdfstring{rotate\+By\+Radians()}{rotateByRadians()}}
+{\footnotesize\ttfamily void Robot\+::rotate\+By\+Radians (\begin{DoxyParamCaption}\item[{double}]{radians\+To\+Rotate,  }\item[{double}]{angular\+Velocity = {\ttfamily 0.5} }\end{DoxyParamCaption})}
+
+Rotates the robot counter-\/clockwise in radians
+
+
+\begin{DoxyParams}{Parameters}
+{\em radians\+To\+Rotate} & -\/ total angular distance to rotate in radians. Negative values rotate clockwise \\
+\hline
+{\em angular\+Velocity} & -\/ rate to rotate in radians per second. Negative values rotate clockwise \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRobot_ae59cdda4345c38cff6157f78a417b102}\label{classRobot_ae59cdda4345c38cff6157f78a417b102}} 
+\index{Robot@{Robot}!set\+Motor\+Enable@{set\+Motor\+Enable}}
+\index{set\+Motor\+Enable@{set\+Motor\+Enable}!Robot@{Robot}}
+\subsubsection{\texorpdfstring{set\+Motor\+Enable()}{setMotorEnable()}}
+{\footnotesize\ttfamily void Robot\+::set\+Motor\+Enable (\begin{DoxyParamCaption}\item[{bool}]{is\+Motor\+Enabled }\end{DoxyParamCaption})}
+
+Enable or disable the robot\textquotesingle{}s motor
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Motor\+Enabled} & -\/ true to enable the motor, false to disable \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRobot_a1135ca4f689f1d8354cb03c3a095934e}\label{classRobot_a1135ca4f689f1d8354cb03c3a095934e}} 
+\index{Robot@{Robot}!set\+Speed@{set\+Speed}}
+\index{set\+Speed@{set\+Speed}!Robot@{Robot}}
+\subsubsection{\texorpdfstring{set\+Speed()}{setSpeed()}}
+{\footnotesize\ttfamily void Robot\+::set\+Speed (\begin{DoxyParamCaption}\item[{double}]{forward\+Velocity = {\ttfamily 0.5},  }\item[{double}]{angular\+Velocity = {\ttfamily 0.5},  }\item[{Turn\+Direction\+::\+Enum}]{dir = {\ttfamily TurnDirection\+:\+:Left} }\end{DoxyParamCaption})}
+
+Extends the Proximity2d\+Proxy\textquotesingle{}s Set\+Speed() method to allow for more flexibility when rotating the robot
+
+
+\begin{DoxyParams}{Parameters}
+{\em forward\+Velocity} & -\/ forward velocity to move the robot in m/s \\
+\hline
+{\em angular\+Velocity} & -\/ angular velocity to rotate the robot in rad/s \\
+\hline
+{\em dir} & -\/ direction for the robot to move in \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Robot.\+h\item 
+Robot.\+cc\end{DoxyCompactItemize}
